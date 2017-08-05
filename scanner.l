@@ -49,7 +49,7 @@ slot		#({decimals}|{ident})?
 "&&"			return AND
 "->"			return RULE
 "/."			return REPLACEALL
-"//"			return MAPALL
+"//"			return POSTFIX
 "//."			return REPLACEREP
 "/;"			return CONDITION
 "/@"			return MAP

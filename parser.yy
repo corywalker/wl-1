@@ -29,7 +29,7 @@ package wl
 	LEQ		"<="
 	LPART		"[["
 	MAP		"/@"
-	MAPALL		"//"
+	POSTFIX		"//"
 	MESSAGE		"::"
 	OR		"||"
 	REPLACEALL	"/."
@@ -74,7 +74,7 @@ package wl
 %left STRINGJOIN
 %precedence '!' // Factorial
 %left APPLY
-%left MAPALL
+%left POSTFIX
 %left MAP
 %left '@'
 %left LPART RPART
