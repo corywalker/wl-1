@@ -46,6 +46,7 @@ package wl
 %left '=' SET_DELAYED
 %left ':'
 %precedence '&'
+%left POSTFIX
 %left REPLACEREP
 %left REPLACEALL
 %left RULEDELAYED
@@ -74,9 +75,8 @@ package wl
 %left STRINGJOIN
 %precedence '!' // Factorial
 %left APPLY
-%left POSTFIX
 %left MAP
-%left '@'
+%right '@'
 %left LPART RPART
 %left '[' ']'
 %left '?'
